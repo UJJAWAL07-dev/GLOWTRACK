@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GlowFit | Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-theme page-dashboard">
+  <header class="top-nav">
+    <div class="nav-left">
+      <a href="dashboard.html" class="logo">GlowFit <span class="sparkle">✨</span></a>
+    </div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#usage">Usage & Benefits</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#plans">Plans</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#progress">Progress</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Greeting + Hero -->
+    <section class="card gradient-card greeting" id="top">
+      <div class="gcol">
+        <h2 id="greetingText">Hello, Glow!</h2>
+        <p id="userSummary" class="muted"></p>
+
+        <p class="long-para italic" id="aboutIntro">
+          GlowFit is your personalised workout planner that actually respects your time, your body,
+          and your limitations. Instead of throwing random generic workouts at you, GlowFit turns
+          your details into realistic 7-day plans with vegetarian & non-vegetarian food suggestions,
+          region-aware diet ideas, colourful check-ins, and streaks with emojis.
+        </p>
+
+        <div class="chip-row">
+          <span class="tag tag-pink">💪 Custom workouts</span>
+          <span class="tag tag-yellow">🍱 Region-based diet ideas</span>
+          <span class="tag tag-olive">📱 Phone-like calendar</span>
+          <span class="tag tag-crimson">🔥 Streaks & party poppers</span>
+        </div>
+
+        <div class="motivation-box" id="dailyMotivation">
+          🌟 Today’s motivation: Small consistent steps beat random intense days.
+        </div>
+      </div>
+
+      <div class="gcol right">
+        <div class="login-illustration">
+          <div class="blob blob-pink"></div>
+          <div class="blob blob-yellow"></div>
+          <div class="blob blob-olive"></div>
+
+          <img
+            src="https://img.sanishtech.com/u/db4b1ec847f8f4e33cab609e796027d2.png"
+            alt="Dashboard hero"
+            class="hero-img small-hero"
+          />
+
+          <p class="tiny-caption">
+            You + consistency + GlowFit = <strong>visible progress</strong> ✨
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Row -->
+    <section class="card info-row">
+      <div class="info-card info-bmi">
+        <h3>BMI</h3>
+        <div class="big-number" id="bmiValue">--</div>
+        <p class="muted" id="bmiStatus">We’ll tell you your range.</p>
+      </div>
+
+      <div class="info-card info-bmr">
+        <h3>BMR</h3>
+        <div class="big-number" id="bmrValue">--</div>
+        <p class="muted">Approx calories your body burns at rest.</p>
+      </div>
+
+      <div class="info-card info-plan">
+        <h3>Suggested plan</h3>
+        <div class="big-number" id="suggestedPlan">--</div>
+        <p class="muted">Based on your BMI, activity & goal.</p>
+      </div>
+
+      <div class="info-card info-streak">
+        <h3>Streak</h3>
+        <div class="big-number"><span id="streakCount">0</span> days</div>
+        <p class="muted">
+          <span class="streak-icon">🔥</span>
+          Keep logging your day on the calendar.
+        </p>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="card about-card" id="about">
+      <h3>About GlowFit 🌈</h3>
+      <p class="long-para">
+        GlowFit is built for people who feel lost in generic workout videos and “one plan fits all”
+        routines. You enter your basics, we calculate BMI & BMR, show whether you’re underweight,
+        normal, overweight or obese, and then suggest a suitable plan: lose weight, gain weight, or
+        gain muscle.
+      </p>
+      <p class="long-para" style="margin-top:6px;">
+        Each plan comes with realistic daily workouts, vegetarian and non-vegetarian food ideas
+        based on your region (India, Pakistan or other), and small tips that focus on sustainability
+        instead of extreme diets. Every day, you can log what you actually did, maintain streaks,
+        and get a quick visual of your progress.
+      </p>
+    </section>
+
+    <!-- Usage & Benefits -->
+    <section class="card usage-card" id="usage">
+      <h3>Usage, exercise benefits & insights 💡</h3>
+      <ul class="usage-list">
+        <li>Use GlowFit daily for 5–10 minutes to tick off your workout and food log.</li>
+        <li>Short guided workout suggestions reduce decision fatigue (“what should I do today?”).</li>
+        <li>Region-based diet ideas mean you don’t have to search endlessly for “Indian weight loss meals”.</li>
+        <li>Benefits of regular exercise include better energy, mood, digestion and sleep quality.</li>
+        <li>Insights highlight how many days you stayed active, which days you typically miss, and how your streak is growing.</li>
+      </ul>
+    </section>
+
+    <!-- FAQs -->
+    <section class="card faqs-card" id="faqs">
+      <h3>FAQs ❓</h3>
+      <div class="faq">
+        <strong>Q. I don’t have equipment. Can I still use GlowFit?</strong>
+        <p>A. Yes, daily workouts are based on bodyweight basics like squats, push-ups, planks, steps and walking.</p>
+      </div>
+      <div class="faq">
+        <strong>Q. Are these strict medical diets?</strong>
+        <p>A. No, these are simple home-style suggestions that are realistic. For medical conditions, always confirm with a doctor.</p>
+      </div>
+      <div class="faq">
+        <strong>Q. What if I break my streak?</strong>
+        <p>A. A little sad emoji appears, but you can restart the very next day. Consistency is about coming back, not perfection.</p>
+      </div>
+    </section>
+
+    <!-- Plans -->
+    <section class="card plans-grid" id="plans">
+      <h3>Plans 🎯</h3>
+      <div class="plan-cards">
+        <article class="plan plan-lose">
+          <div class="plan-head">
+            <span>Lose Weight</span>
+            <span class="emoji">🍃</span>
+          </div>
+          <p>Gentle calorie deficit, more steps, and light strength work to protect your joints.</p>
+          <div class="plan-tags">
+            <span class="tag tag-yellow">Light & Moderate</span>
+            <span class="tag tag-pink">Beginner friendly</span>
+          </div>
+          <div class="plan-actions">
+            <a href="plan.html?type=lose" class="btn-secondary">View plan</a>
+          </div>
+        </article>
+
+        <article class="plan plan-gain">
+          <div class="plan-head">
+            <span>Gain Weight</span>
+            <span class="emoji">🍛</span>
+          </div>
+          <p>Balanced surplus with frequent meals, healthy fats and simple home workouts.</p>
+          <div class="plan-tags">
+            <span class="tag tag-olive">More calories</span>
+            <span class="tag tag-pastel">Gentle strength</span>
+          </div>
+          <div class="plan-actions">
+            <a href="plan.html?type=gain" class="btn-secondary">View plan</a>
+          </div>
+        </article>
+
+        <article class="plan plan-muscle">
+          <div class="plan-head">
+            <span>Gain Muscle</span>
+            <span class="emoji">🏋️‍♀️</span>
+          </div>
+          <p>Progressive strength-based plan with adequate protein and structured rest.</p>
+          <div class="plan-tags">
+            <span class="tag tag-crimson">Strength focus</span>
+            <span class="tag tag-black">Dark mode beast</span>
+          </div>
+          <div class="plan-actions">
+            <a href="plan.html?type=muscle" class="btn-secondary">View plan</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Calendar + Streak -->
+    <section class="card calendar-shell" id="calendar">
+      <h3>Colourful calendar & streaks 🗓️</h3>
+      <div class="phone-calendar">
+        <div class="cal-doodle cal-doodle-left">💫</div>
+        <div class="cal-doodle cal-doodle-right">⭐</div>
+
+        <div class="cal-header">
+          <div class="cal-month" id="calendarMonth">Your Month</div>
+        </div>
+
+        <div class="cal-weekdays">
+          <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+        </div>
+
+        <div class="calendar-grid" id="calendarGrid">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+
+      <div class="card streak-card">
+        <div class="streak-display">
+          <h4>Streak & Progress</h4>
+          <p class="muted">
+            Tap on days to mark them as completed ✅ or missed 😴. Completed days boost your streak.
+          </p>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Progress / Insights -->
+    <section class="card progress-card" id="progress">
+      <h3>Insights & Progress Tracker 📊</h3>
+      <p class="long-para">
+        GlowFit tracks how many days you showed up, your current streak, and which plan you’ve chosen.
+        Over time, this gives you a simple picture: Am I doing more this month than last month?
+      </p>
+
+      <div style="margin-top:8px;" class="emoji-row">
+        <span>🔥 = completed workout</span>
+        <span>😴 = skipped</span>
+        <span>🎉 = streak milestone</span>
+      </div>
+
+      <p class="muted" id="insightsText" style="margin-top:6px;">
+        Complete a few days to unlock insights here.
+      </p>
+
+      <img
+        src="https://img.sanishtech.com/u/b72ca5732ce799b4acd52c535c44d073.jpg"
+        alt="Progress illustration"
+        class="decor-img"
+      />
+    </section>
+  </main>
+
+  <div id="partyPoppers" class="party-poppers" style="display:none;">🎉🎉🎉</div>
+
+  <footer class="footer" style="margin:12px 0;">
+    GlowFit • Consistency, colour & calm guidance.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

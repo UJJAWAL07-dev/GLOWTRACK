@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GlowFit | Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-theme">
+  <div class="center-col index-shell">
+    <main class="container">
+      <header class="brand">
+        <h1>GlowFit <span class="sparkle">✨</span></h1>
+        <p class="tagline">Personalised workouts, realistic diet, and colourful progress tracking.</p>
+      </header>
+
+      <section class="login-grid">
+        <!-- Form side -->
+        <div class="login-card">
+          <h2 class="section-title">Start your GlowFit journey 💪</h2>
+          <form id="userForm">
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+
+              <div class="form-row">
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" min="10" max="100" required />
+              </div>
+
+              <div class="form-row">
+                <label for="height">Height (cm)</label>
+                <input id="height" name="height" type="number" min="80" max="250" required />
+              </div>
+
+              <div class="form-row">
+                <label for="weight">Weight (kg)</label>
+                <input id="weight" name="weight" type="number" min="25" max="250" required />
+              </div>
+
+              <div class="form-row">
+                <label for="bloodGroup">Blood Group</label>
+                <select id="bloodGroup" name="bloodGroup" required>
+                  <option value="">Select</option>
+                  <option>O+</option>
+                  <option>O-</option>
+                  <option>A+</option>
+                  <option>A-</option>
+                  <option>B+</option>
+                  <option>B-</option>
+                  <option>AB+</option>
+                  <option>AB-</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label for="region">Region</label>
+                <select id="region" name="region" required>
+                  <option value="">Select region</option>
+                  <option value="india">India</option>
+                  <option value="pakistan">Pakistan</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label for="activity">How active are you?</label>
+                <select id="activity" name="activity" required>
+                  <option value="">Select</option>
+                  <option value="sedentary">Sedentary (little/no exercise)</option>
+                  <option value="light">Light (1–3 days/week)</option>
+                  <option value="moderate">Moderate (3–5 days/week)</option>
+                  <option value="active">Active (6–7 days/week)</option>
+                  <option value="athlete">Athlete / very intense</option>
+                </select>
+              </div>
+
+              <div class="form-row full">
+                <label for="goalPreference">Primary goal now</label>
+                <select id="goalPreference" name="goalPreference">
+                  <option value="">Let GlowFit decide</option>
+                  <option value="lose">Lose weight</option>
+                  <option value="gain">Gain weight</option>
+                  <option value="muscle">Gain muscle</option>
+                </select>
+              </div>
+            </div>
+
+            <p class="small-note">
+              We’ll use this data to calculate your BMI, BMR, suggest a realistic plan, and build your colourful streak calendar. No signup or email required for this prototype.
+            </p>
+
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+              <button type="submit" class="btn-primary rainbow-btn">
+                Continue to your dashboard 🚀
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Illustration side -->
+        <div class="login-illustration">
+          <div class="blob blob-pink"></div>
+          <div class="blob blob-yellow"></div>
+          <div class="blob blob-olive"></div>
+
+          <!-- Main image you asked to add -->
+          <img
+            src="https://img.sanishtech.com/u/db4b1ec847f8f4e33cab609e796027d2.png"
+            alt="GlowFit login hero"
+            class="hero-img big-hero"
+          />
+
+          <!-- Single secondary image -->
+          <img
+            src="https://img.sanishtech.com/u/f1eb5ba71438fff93605b2b15a39a658.jpg"
+            alt="Workout illustration"
+            class="hero-img stacked-hero"
+          />
+
+          <p class="tiny-caption">
+            <span class="pill pill-pink">Smart</span>
+            <span class="pill pill-yellow">Colourful</span>
+            <span class="pill pill-crimson">Realistic</span>
+          </p>
+        </div>
+      </section>
+
+      <footer class="index-footer">
+        GlowFit • Prototype fitness planner with streaks, dark theme & vibrant colours 🌈
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
