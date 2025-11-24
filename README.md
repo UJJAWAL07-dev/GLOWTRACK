@@ -1,4 +1,4 @@
-GLOWTRACKER is a multi-page, fully responsive fitness planning website built for hackathons.
+GLOWTRACKER is a multi-page, fully responsive fitness planning website.
 It helps users generate personalized workout plans, track progress, maintain streaks, and stay motivated through clean UI and visual insights.
 This project solves the common fitness problem:
 “People don’t know what workouts to follow, lack consistency, and lose motivation due to non-personalized plans.”
