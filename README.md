@@ -3,7 +3,9 @@ It helps users generate personalized workout plans, track progress, maintain str
 This project solves the common fitness problem:
 “People don’t know what workouts to follow, lack consistency, and lose motivation due to non-personalized plans.”
 GLOWTRACKER fixes that with personalized planning + habit tracking + visual motivation.
+
 🚀 Features
+
 1. PERSONALIZED WORKOUT PLAN GENERATOR
 Users get a custom weekly workout plan based on:
 Fitness goal (fat loss, muscle gain, strength, stamina, mobility)
